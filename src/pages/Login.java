@@ -28,18 +28,25 @@ public class Login implements ActionListener {
 
         title.setBounds(120,20,800, 50);
         title.setFont(new Font("Arial", Font.ITALIC, 40));
+        title.setForeground(Color.white);
 
         userIDLabel.setBounds(150, 150, 150, 26);
         userIDField.setBounds(300, 150, 150, 26);
-        userIDLabel.setFont(new Font("Arial",Font.BOLD, 26));
+        userIDLabel.setFont(new Font("Arial",Font.PLAIN, 26));
+        userIDLabel.setForeground(Color.white);
+
         userPasswordLabel.setBounds(150, 250, 150, 26);
         userPasswordField.setBounds(300, 250, 150, 26);
-        userPasswordLabel.setFont(new Font("Arial",Font.BOLD, 26));
+        userPasswordLabel.setFont(new Font("Arial",Font.PLAIN, 26));
+        userPasswordLabel.setForeground(Color.white);
+
         outputMessage.setBounds(300,450,300,30);
         outputMessage.setFont(new Font("Arial", Font.ITALIC,26));
+        outputMessage.setForeground(Color.white);
 
         loginButton.setBounds(275, 350, 100, 25);
         loginButton.addActionListener(this);
+
         resetButton.setBounds(375, 350, 100, 25);
         resetButton.addActionListener(this);
 
@@ -56,6 +63,8 @@ public class Login implements ActionListener {
         frame.setSize(800,800);
         frame.setLayout(null);
         frame.setVisible(true);
+        frame.getContentPane().setBackground(Color.decode("#03989e"));
+
 
     }
 
